@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>Text Encryption/Decryption</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Text Encryption/Decryption</h1>
+        <div class="half-section">
+            <form id="encryption-form" onsubmit="submitForm(event, 'encrypt')" action="/encrypt" method="post">
+                <label for="input-text">Enter Text for Encryption:</label>
+                <textarea id="input-text" name="data" rows="4" placeholder="Type your text here..." required></textarea>
+                <button type="submit">Encrypt</button>
+            </form>
+        </div>
+        <div class="half-section">
+            <form id="decryption-form" onsubmit="submitForm(event, 'decrypt')" action="/decrypt" method="post">
+                <label for="input-text">Enter Text for Decryption:</label>
+                <textarea id="input-text" name="data" rows="4" placeholder="Paste encrypted text here..." required></textarea>
+                <button type="submit">Decrypt</button>
+            </form>
+        </div>
+        <label for="output-text">Result:</label>
+        <textarea id="output-text" rows="4" readonly>{{ result }}</textarea>
+    </div>
+</body>
+</html>
