@@ -1,5 +1,5 @@
 # Text Encryption Using Cryptographic Algorithms
-Basically this repo is a part of SlashMark internship program where this project allocate as `Task-1`. This web application allows users to encrypt and decrypt textual information using cryptographic algorithms. The application is built using Flask, Python, HTML, and CSS.
+This repository is essentially a component of my internship program at SlashMark, where this project is allocate as Task-1. This web application allows users to encrypt and decrypt textual information using cryptographic algorithms. The application is built using Flask, Python, HTML, and CSS.
 
 ## Setup Instructions
 Follow these steps to set up the project in a virtual environment:
