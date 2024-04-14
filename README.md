@@ -10,8 +10,8 @@ Follow these steps to set up the project in a virtual environment:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/Patel-Aum-28/Text-Encryption-Decryption
-cd Text-Encryption-Decryption
+git clone https://github.com/Patel-Aum-28/Text-Encryption
+cd Text-Encryption
 ```
 
 ### Create a Virtual Environment
